@@ -19,9 +19,9 @@ The project is organized as two Maven projects: one for the clinical document se
 Integrating the SENDER Project with your EHR
 =================
 
-The SENDER project provides a WSDL that can be using for plugging into an EHR: the FilterC32Service.wsdl located in the push-orchestration\service\src\main\resources folder which allows an EHR to send a patientId (among other parameters) and receive back a fully segmented document.
+The SENDER project provides a WSDL that can be used for plugging into an EHR: the FilterC32Service.wsdl located in the push-orchestration\service\src\main\resources folder which allows an EHR to send a patientId (among other parameters) and receive back a fully segmented document.
 
-The EHR must expose a WSDL for retrieving CDA document. This is the C32Service.wsdl in the c32-service-client\src\main\resources folder.
+The EHR must expose a WSDL for retrieving CDA document. In the SENDER project, the C32Service.wsdl in the c32-service-client\src\main\resources folder is used for that purpose.
 
 Running the SENDER Code
 =================
