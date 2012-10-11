@@ -24,4 +24,6 @@ The project is organized as two Maven projects: one for the clinical document se
 2. Download and install Maven
 3. Download and install the JBoss AS7 application server
 4. Download and unzip the SENDER Maven project from GitHub
-5. Open the command prompt and go to the root folder (the parent POMof the SENDER
+5. 
+5. Open the command prompt and go to the root folder (the parent POM file is located in the root folder) of the SENDER
+6. Execute the following on the command line to build the entire SENDER project: mvn clean install.
