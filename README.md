@@ -15,7 +15,7 @@ The output of the PDP is DENY or PERMIT decision with or without OBLIGATIONS. An
 When the PDP decision is a PERMIT with OBLIGATIONS, (1) the clincical document is retrieved from the EHR, (2) clinical facts (such as problem and medication entries) are extracted from the clinical document, (3) the clinical facts, the Purpose of Use, and the Obligations are sent to the Drools rules engine, (4) the Drools rules engine returns a set of directives for segmenting the clinical document, (5) the segmentation directives are applied to the clinical document, and (6) the sgemented document is sent to the recipient.
 
 
-Running the Code
+Running the SENDERCode
 =================
  
 The project is organized as two Maven projects: one for the clinical document sender (SENDER), the other for the clinical document recipient (RECIPIENT). Each project contains its own Maven POM file. The SENDER project is a modular Maven project. There is a parent POM file and submodules with their own child POM files. To run the SENDER's Maven project file, do the following:
@@ -24,6 +24,6 @@ The project is organized as two Maven projects: one for the clinical document se
 2. Download and install Maven
 3. Download and install the JBoss AS7 application server
 4. Download and unzip the SENDER Maven project from GitHub
-5. 
+5. Go to the context-handler-client sub-folder and run (1) mvn clean install, (2) mvn assembly:assembly, and (3) mvn install:install-file -DgroupId=context-handler-client-jar-with-dependencies -DartifactId=context-handler-client-jar-with-dependencies -Dversion=1.0 -Dfile=context-handler-client-jar-with-dependencies.jar -Dpackaging=jar -DgeneratePom=true
 5. Open the command prompt and go to the root folder (the parent POM file is located in the root folder) of the SENDER
 6. Execute the following on the command line to build the entire SENDER project: mvn clean install.
