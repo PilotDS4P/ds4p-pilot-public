@@ -29,7 +29,7 @@ Running the SENDER Code
 The SENDER project is a modular Maven project. There is a parent POM file and submodules with their own child POM files. To run the SENDER's Maven project file, do the following:
 
 1. Download and install the Java SE Development Kit 6 (JDK 1.6.0)
-2. Download and install Maven
+2. Download and install Maven 3
 3. Download and install the JBoss AS7 application server (jboss-as-7.1.1.Final)
 4. Download and unzip the SENDER Maven project from GitHub
 5. Go to the context-handler-client sub-folder and run (1) mvn clean install, (2) mvn assembly:assembly, and (3) inside target folder run mvn install:install-file -DgroupId=context-handler-client-jar-with-dependencies -DartifactId=context-handler-client-jar-with-dependencies -Dversion=1.0 -Dfile=context-handler-client-jar-with-dependencies.jar -Dpackaging=jar -DgeneratePom=true
