@@ -18,10 +18,10 @@ When the PDP decision is a PERMIT with OBLIGATIONS, (1) the clincical document i
 Running the Code
 =================
  
-The project is organized as two Maven projects: one for the clinical document sender (SENDER), the other for the clinical document recipient (RECIPIENT). Each project contains its own Maven POM file. To run the SENDER's Maven project file, do the following:
+The project is organized as two Maven projects: one for the clinical document sender (SENDER), the other for the clinical document recipient (RECIPIENT). Each project contains its own Maven POM file. The SENDER project is a modular Maven project. There is a parent POM file and submodules with their own child POM files. To run the SENDER's Maven project file, do the following:
 
 1. Download and install the JDK
 2. Download and install Maven
 3. Download and install the JBoss AS7 application server
 4. Download and unzip the SENDER Maven project from GitHub
-5
+5. Open the command prompt and go to the root folder (the parent POMof the SENDER
