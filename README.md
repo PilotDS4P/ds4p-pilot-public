@@ -14,11 +14,20 @@ The output of the PDP is DENY or PERMIT decision with or without OBLIGATIONS. An
 
 When the PDP decision is a PERMIT with OBLIGATIONS, (1) the clincical document is retrieved from the EHR, (2) clinical facts (such as problem and medication entries) are extracted from the clinical document, (3) the clinical facts, the Purpose of Use, and the Obligations are sent to the Drools rules engine, (4) the Drools rules engine returns a set of directives for segmenting the clinical document, (5) the segmentation directives are applied to the clinical document, and (6) the sgemented document is sent to the recipient.
 
+The project is organized as two Maven projects: one for the clinical document sender (SENDER), the other for the clinical document recipient (RECIPIENT). Each project contains its own Maven POM file. 
+
+Integrating the SENDER Project with your EHR
+=================
+
+The SENDER project provides 2 WSDLs that can be using for plugging into an EHR:
+
+1. FilterC32Service.wsdl located in the push-orchestration\service\src\main\resources folder which allows an EHR to send a patientId (among other parameters) and receive back a fully segmented document.
+2. 
 
 Running the SENDER Code
 =================
  
-The project is organized as two Maven projects: one for the clinical document sender (SENDER), the other for the clinical document recipient (RECIPIENT). Each project contains its own Maven POM file. The SENDER project is a modular Maven project. There is a parent POM file and submodules with their own child POM files. To run the SENDER's Maven project file, do the following:
+The SENDER project is a modular Maven project. There is a parent POM file and submodules with their own child POM files. To run the SENDER's Maven project file, do the following:
 
 1. Download and install the JDK
 2. Download and install Maven
