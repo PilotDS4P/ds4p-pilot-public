@@ -41,4 +41,4 @@ The ds4p-sender project is a modular Maven project. There is a parent POM file a
 11. Go to the audit-service-client sub-folder and run (1) mvn clean install, (2) mvn assembly:assembly, and (3) inside target folder run mvn install:install-file -DgroupId=audit-service-client-jar-with-dependencies -DartifactId=audit-service-client-jar-with-dependencies -Dversion=1.0 -Dfile=audit-service-client-jar-with-dependencies.jar -Dpackaging=jar -DgeneratePom=true
 12. Get the DS4PCommonLibrary.jar JAR file from https://github.com/PilotDS4P/ds4p-pilot-public/blob/master/lib/DS4PCommonLibrary.jar and run mvn install:install-file -DgroupId=DS4PCommonLibrary -DartifactId=DS4PCommonLibrary -Dversion=1.0 -Dfile=DS4PCommonLibrary.jar -Dpackaging=jar -DgeneratePom=true
 5. Open the command prompt and go to the root folder (the parent POM file is located in the root folder) of the SENDER
-6. Execute the following on the command line to build the entire SENDER project: mvn clean install.
+6. Execute the following on the command line to build the entire ds4p-sender project: mvn clean install.
