@@ -16,22 +16,22 @@ When the PDP decision is a PERMIT with OBLIGATIONS, (1) the clincical document i
 
 The project is organized as two Maven projects: one for the clinical document sender (SENDER), the other for the clinical document recipient (RECIPIENT). Each project contains its own Maven POM file. 
 
-Integrating the SENDER Project with your EHR
+Integrating the ds4p-sender Project with your EHR
 =================
 
-The SENDER project provides a WSDL that can be used for plugging into an EHR: the FilterC32Service.wsdl located in the push-orchestration\service\src\main\resources folder which allows an EHR to send a patientId (among other parameters) and receive back a fully segmented document.
+The ds4p-sender project provides a WSDL that can be used for plugging into an EHR: the FilterC32Service.wsdl located in the push-orchestration\service\src\main\resources folder which allows an EHR to send a patientId (among other parameters) and receive back a fully segmented document.
 
 The EHR must expose a WSDL for retrieving CDA document. In the SENDER project, the C32Service.wsdl in the c32-service-client\src\main\resources folder is used for that purpose.
 
-Running the SENDER Code
+Running the ds4p-sender Code
 =================
  
-The SENDER project is a modular Maven project. There is a parent POM file and submodules with their own child POM files. To run the SENDER's Maven project file, do the following:
+The ds4p-sender project is a modular Maven project. There is a parent POM file and submodules with their own child POM files. To run the SENDER's Maven project file, do the following:
 
 1. Download and install the Java SE Development Kit 6 (JDK 1.6.0)
 2. Download and install Maven 3
 3. Download and install the JBoss AS7 application server (jboss-as-7.1.1.Final)
-4. Download and unzip the SENDER Maven project from GitHub
+4. Download and unzip the ds4p-sender Maven project from GitHub
 5. Go to the context-handler-client sub-folder and run (1) mvn clean install, (2) mvn assembly:assembly, and (3) inside target folder run mvn install:install-file -DgroupId=context-handler-client-jar-with-dependencies -DartifactId=context-handler-client-jar-with-dependencies -Dversion=1.0 -Dfile=context-handler-client-jar-with-dependencies.jar -Dpackaging=jar -DgeneratePom=true
 6. Go to the clinically-adaptive-rules-client sub-folder and run (1) mvn clean install, (2) mvn assembly:assembly, and (3) inside target folder run mvn install:install-file -DgroupId=clinically-adaptive-rules-client-jar-with-dependencies -DartifactId=clinically-adaptive-rules-client-jar-with-dependencies -Dversion=1.0 -Dfile=clinically-adaptive-rules-client-jar-with-dependencies.jar -Dpackaging=jar -DgeneratePom=true
 7. Go to the c32-service-client sub-folder and run (1) mvn clean install, (2) mvn assembly:assembly, and (3) inside target folder run mvn install:install-file -DgroupId=c32-client-jar-with-dependencies -DartifactId=c32-client-jar-with-dependencies -Dversion=1.0 -Dfile=c32-client-jar-with-dependencies.jar -Dpackaging=jar -DgeneratePom=true
