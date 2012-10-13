@@ -29,11 +29,8 @@
     <xsl:variable name="author" select="//ClinicalDocument/author/assignedAuthor"/>
 
 
-    <!--xsl:variable name="authorIdentifier"
-        select="string-join((concat($author/id/@extension, '^^^'), $author/id/@root, 'ISO'), '&amp;')"/-->
-
     <xsl:variable name="authorIdentifier"
-        select="string-join((concat('100010020002', '^^^'), $homeCommunityId, 'ISO'), '&amp;')"/>
+        select="string-join((concat($author/id/@extension, '^^^'), $author/id/@root, 'ISO'), '&amp;')"/>
 
     <xsl:variable name="confidentialityCode" select="//ClinicalDocument/confidentialityCode/@code"/>
 
@@ -206,8 +203,7 @@
                         </Slot>
                         <Slot name="authorInstitution">
                             <ValueList>
-                                <Value>XYZ
-                                    Clinic<!--xsl:value-of select="$author/representedOrganization/name"/-->
+                                <Value><xsl:value-of select="$author/representedOrganization/name"/>
                                 </Value>
                             </ValueList>
                         </Slot>
@@ -299,7 +295,7 @@
                             <LocalizedString value="{$documentTypeInLoincDisplayName}"/>
                         </Name>
                     </Classification>
-                    <Classification id="c108"
+                    <Classification id="cl08"
                         classificationScheme= "urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
                         classifiedObject="Document01"                        
                         objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification"
@@ -354,8 +350,7 @@
                         </Slot>
                         <Slot name="authorInstitution">
                             <ValueList>
-                                <Value>XYZ
-                                    Clinic<!--xsl:value-of select="$author/representedOrganization/name"/-->
+                                <Value><xsl:value-of select="$author/representedOrganization/name"/>
                                 </Value>
                             </ValueList>
                         </Slot>
