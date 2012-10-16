@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://vmcentral:8080/DS4PACSServices/DS4PClinicallyAdaptiveRulesInterface?wsdl" uri="wsdl/vmcentral_8080/DS4PACSServices/DS4PClinicallyAdaptiveRulesInterface.wsdl"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/DS4PClinicallyAdaptiveRulesInterface?xsd=1" uri="wsdl/vmcentral_8080/DS4PACSServices/DS4PClinicallyAdaptiveRulesInterface.xsd_1.xsd"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/DS4PContextHandler?wsdl" uri="wsdl/vmcentral_8080/DS4PACSServices/DS4PContextHandler.wsdl"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/DS4PContextHandler?xsd=1" uri="wsdl/vmcentral_8080/DS4PACSServices/DS4PContextHandler.xsd_1.xsd"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/DS4PReferenceData?wsdl" uri="wsdl/vmcentral_8080/DS4PACSServices/DS4PReferenceData.wsdl"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/DS4PReferenceData?xsd=1" uri="wsdl/vmcentral_8080/DS4PACSServices/DS4PReferenceData.xsd_1.xsd"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/DS4PAuditService?wsdl" uri="wsdl/vmcentral_8080/DS4PACSServices/DS4PAuditService.wsdl"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/DS4PAuditService?xsd=1" uri="wsdl/vmcentral_8080/DS4PACSServices/DS4PAuditService.xsd_1.xsd"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/NwHINDirectDocumentProcessing?wsdl" uri="wsdl/vmcentral_8080/DS4PACSServices/NwHINDirectDocumentProcessing.wsdl"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/NwHINDirectDocumentProcessing?xsd=1" uri="wsdl/vmcentral_8080/DS4PACSServices/NwHINDirectDocumentProcessing.xsd_1.xsd"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/NwHINDirectAuthorizationServices?wsdl" uri="wsdl/vmcentral_8080/DS4PACSServices/NwHINDirectAuthorizationServices.wsdl"/>
+    <system systemId="http://vmcentral:8080/DS4PACSServices/NwHINDirectAuthorizationServices?xsd=1" uri="wsdl/vmcentral_8080/DS4PACSServices/NwHINDirectAuthorizationServices.xsd_1.xsd"/>
+</catalog>
