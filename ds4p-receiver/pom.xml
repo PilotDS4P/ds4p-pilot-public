@@ -8,5 +8,6 @@
   <name>ds4p-receiver</name>
   <modules>
     <module>common-library</module>
+    <module>acs-services</module>
   </modules>
 </project>
