@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="rule">
+        <xs:complexType>
+            <xs:attribute name="ruleId" type="xs:integer"/>
+            <xs:attribute form="unqualified" name="ruleName" type="xs:string"/>
+            <xs:attribute name="description" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ruleType" type="xs:string"/>
+</xs:schema>
