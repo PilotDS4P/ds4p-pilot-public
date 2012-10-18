@@ -81,8 +81,18 @@
             <artifactId>serializer</artifactId>
             <version>2.7.1</version>
         </dependency>
+        <dependency>
+          <groupId>com.sun.xml.ws</groupId>
+          <artifactId>webservices-rt</artifactId>
+          <version>1.4</version>
+          <scope>provided</scope>
+        </dependency> 
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>javax.persistence</artifactId>
+            <version>2.0.0</version>
+        </dependency>       
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -130,6 +140,42 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.jvnet.jax-ws-commons</groupId>
+                <artifactId>jaxws-maven-plugin</artifactId>
+                <version>2.2</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.sun.xml.ws</groupId>
+                        <artifactId>jaxws-tools</artifactId>
+                        <version>2.2.7</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>1</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>wsgen</goal>
+                        </goals>
+                        <configuration>
+                            <seis>
+                                <sei>gov.va.ehtac.ds4p.ws.DS4PAudit</sei>
+                                <sei>gov.va.ehtac.ds4p.ws.DS4PClinicallyAdaptiveRulesInterface</sei>
+                                <sei>gov.va.ehtac.ds4p.ws.DS4PContextHandler</sei>
+                                <sei>gov.va.ehtac.ds4p.ws.DS4PReferenceData</sei>
+                                <sei>gov.va.ehtac.ds4p.ws.NwHINDirectAuthorizationServices</sei>
+                                <sei>gov.va.ehtac.ds4p.ws.NwHINDirectDocumentProcessing</sei>
+                            </seis>
+                            <verbose>false</verbose>
+                            <genWsdl>true</genWsdl>
+                            <resourceDestDir>target/classes/META-INF</resourceDestDir>
+                        </configuration>
+                    </execution>
+                    
+                </executions>
+                    
+            </plugin>            
         </plugins>
     </build>
 
