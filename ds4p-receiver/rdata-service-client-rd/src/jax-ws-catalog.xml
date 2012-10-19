@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/github/ds4p-pilot-public/ds4p-receiver/acs-services/target/classes/META-INF/DS4PReferenceData.wsdl" uri="wsdl/DS4PReferenceData.wsdl"/>
+    <system systemId="file:/C:/github/ds4p-pilot-public/ds4p-receiver/acs-services/target/classes/META-INF/DS4PReferenceData_schema1.xsd" uri="wsdl/DS4PReferenceData_schema1.xsd"/>
+</catalog>
