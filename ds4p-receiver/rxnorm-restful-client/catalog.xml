@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/github/ds4p-pilot-public/ds4p-receiver/rxnorm-restful-client/src/main/resources/rxnormrest.xsd" uri="src/main/resources/jaxb/RxNorm/rxnormrest.xsd"/>
+</catalog>
