@@ -9,5 +9,11 @@
   <modules>
     <module>common-library</module>
     <module>acs-services</module>
+    <module>acs-service-client-au</module>
+    <module>acs-service-client-ch</module>
+    <module>acs-service-client-recvr</module>
+    <module>cas-service-client-ri</module>
+    <module>xdm-service-client-dp</module>
+    <module>rdata-service-client-rd</module>
   </modules>
 </project>
