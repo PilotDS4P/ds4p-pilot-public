@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="ASCII"?>
+<!--
+
+    This software is being provided per FARS 52.227-14 Rights in Data - General.
+    Any redistribution or request for copyright requires written consent by the
+    Department of Veterans Affairs.
+
+-->
 <!-- $Id: NarrativeBlock.xsd,v 1.4 2005/04/17 03:13:19 lmckenzi Exp $ -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:hl7-org:v3" targetNamespace="urn:hl7-org:v3" elementFormDefault="qualified">
    <xs:complexType name="StrucDoc.Text" mixed="true">

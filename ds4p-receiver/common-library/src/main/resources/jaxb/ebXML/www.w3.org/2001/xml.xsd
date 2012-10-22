@@ -1,4 +1,11 @@
 <?xml version='1.0'?>
+<!--
+
+    This software is being provided per FARS 52.227-14 Rights in Data - General.
+    Any redistribution or request for copyright requires written consent by the
+    Department of Veterans Affairs.
+
+-->
 <?xml-stylesheet href="../2008/09/xsd.xsl" type="text/xsl"?>
 <xs:schema targetNamespace="http://www.w3.org/XML/1998/namespace" 
   xmlns:xs="http://www.w3.org/2001/XMLSchema" 
