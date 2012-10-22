@@ -15,5 +15,7 @@
     <module>cas-service-client-ri</module>
     <module>xdm-service-client-dp</module>
     <module>rdata-service-client-rd</module>
+    <module>rxnorm-restful-client</module>
+    <module>ds4p-admin-test-harness</module>
   </modules>
 </project>
