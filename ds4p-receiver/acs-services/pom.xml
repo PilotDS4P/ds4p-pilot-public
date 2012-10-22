@@ -12,7 +12,8 @@
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>acs-services</name>
+    <name>DS4PACSServices</name>
+    <url>./DS4PACSServices</url>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
