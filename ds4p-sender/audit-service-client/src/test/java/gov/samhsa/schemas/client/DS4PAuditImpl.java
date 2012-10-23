@@ -28,7 +28,7 @@ import javax.xml.ws.ResponseWrapper;
                       serviceName = "DS4PAuditService",
                       portName = "DS4PAuditPort",
                       targetNamespace = "http://ws.ds4p.ehtac.va.gov/",
-                      wsdlLocation = "http://174.78.146.228:8080/DS4PACSServices/DS4PAuditService?wsdl",
+                      wsdlLocation = "classpath:DS4PAuditService.wsdl",
                       endpointInterface = "gov.va.ehtac.ds4p.ws.DS4PAudit")
                       
 public class DS4PAuditImpl implements DS4PAudit {
