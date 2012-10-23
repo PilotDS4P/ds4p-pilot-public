@@ -28,7 +28,8 @@
                         <wsdlFiles>
                             <wsdlFile>DS4PClinicallyAdaptiveRulesInterface.wsdl</wsdlFile>                      
                         </wsdlFiles>
-                        <wsdlLocation>${basedir}/../acs-services/target/classes/META-INF/DS4PClinicallyAdaptiveRulesInterface.wsdl</wsdlLocation>
+                        <wsdlLocation>http://vmcentral:8080/DS4PACSServices/DS4PClinicallyAdaptiveRulesInterface?wsdl</wsdlLocation>
+                        <wsdlDirectory>${basedir}/../acs-services/target/classes/META-INF</wsdlDirectory>
                         <staleFile>${project.build.directory}/jaxws/stale/DS4PClinicallyAdaptiveRulesInterface.stale</staleFile>
                         <packageName>gov.va.ehtac.ds4p.ws.ri</packageName>
                         <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
@@ -36,6 +37,7 @@
                           <verbose>true</verbose>
                           <extension>true</extension>
                           <target>2.0</target>
+                          <keep>true</keep>
                     </configuration>
                 </execution>
             </executions>

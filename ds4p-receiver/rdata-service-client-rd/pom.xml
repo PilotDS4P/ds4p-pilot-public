@@ -28,7 +28,8 @@
                         <wsdlFiles>
                             <wsdlFile>DS4PReferenceData.wsdl</wsdlFile>                      
                         </wsdlFiles>
-                        <wsdlLocation>${basedir}/../acs-services/target/classes/META-INF/DS4PReferenceData.wsdl</wsdlLocation>
+                        <wsdlLocation>http://vmcentral:8080/DS4PACSServices/DS4PReferenceData?wsdl</wsdlLocation>
+                        <wsdlDirectory>${basedir}/../acs-services/target/classes/META-INF</wsdlDirectory>
                         <staleFile>${project.build.directory}/jaxws/stale/DS4PReferenceData.stale</staleFile>
                         <packageName>gov.va.ehtac.ds4p.ws.rd</packageName>
                         <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
