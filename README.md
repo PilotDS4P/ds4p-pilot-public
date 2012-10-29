@@ -42,3 +42,7 @@ The ds4p-sender project is a modular Maven project. There is a parent POM file a
 12. Get the DS4PCommonLibrary.jar JAR file from https://github.com/PilotDS4P/ds4p-pilot-public/blob/master/lib/DS4PCommonLibrary.jar and run mvn install:install-file -DgroupId=DS4PCommonLibrary -DartifactId=DS4PCommonLibrary -Dversion=1.0 -Dfile=DS4PCommonLibrary.jar -Dpackaging=jar -DgeneratePom=true
 5. Open the command prompt and go to the root folder (the parent POM file is located in the root folder) of the SENDER
 6. Execute the following on the command line to build the entire ds4p-sender project: mvn clean install.
+
+Running the ds4p-receiver Code
+=======================
+
