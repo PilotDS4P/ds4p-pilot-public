@@ -46,3 +46,4 @@ The ds4p-sender project is a modular Maven project. There is a parent POM file a
 Running the ds4p-receiver Code
 =======================
 
+https://github.com/PilotDS4P/ds4p-pilot-public/wiki/DS4P-Receiver
