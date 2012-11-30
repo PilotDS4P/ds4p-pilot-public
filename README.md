@@ -1,6 +1,13 @@
 ds4p-pilot-public
 =================
 
+HL7 2012 Annual Plenary Conference DS4P VA/SAMHSA Pilot Demonstration
+=================
+
+The following video demonstrates one Data Segmentation for Privacy (DS4P) Use Case: Push Share Partial.
+
+http://174.78.146.228/42CFRPart2_Share_Partial.mp4
+
 Architecture
 =================
 
