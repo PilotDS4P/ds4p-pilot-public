@@ -8,7 +8,12 @@ The following video demonstrates one Data Segmentation for Privacy (DS4P) Use Ca
 
 http://174.78.146.228:8080/42CFRPart2_Share_Partial.mp4
 
-Note:  This is a large video and may take some time to download.
+The next video addresses requirements of Title 38 Section 7332, Clinical Fact Administration,
+the Security Labeling Services, and Rules generation.
+
+http://174.78.146.228:8080/DS4PTitle38Section7332SharePartial.mp4
+
+Note:  These videos are large and may take some time to download.
 
 Architecture
 =================
